@@ -2,11 +2,11 @@ cmake_minimum_required(VERSION 3.0)
 
 project(walnutapp)
 
-add_subdirectory(ext/GLFW)
+add_subdirectory(ext/glfw)
 add_subdirectory(ext/glm)
 
-file(GLOB_RECURSE WALNUT_HDRS ext/Walnut/src/**.h)
-file(GLOB_RECURSE WALNUT_SRCS ext/Walnut/src/**.cpp)
+file(GLOB_RECURSE WALNUT_HDRS ext/walnut/Walnut/src/**.h)
+file(GLOB_RECURSE WALNUT_SRCS ext/walnut/Walnut/src/**.cpp)
 
 file(GLOB_RECURSE HDRS src/**.h)
 file(GLOB_RECURSE SRCS src/**.cpp)
@@ -16,9 +16,9 @@ file(GLOB IMGUI_HDRS ext/imgui/*.h)
 file(GLOB IMGUI_SRCS ext/imgui/*.cpp)
 
 include_directories(
-    ${CMAKE_CURRENT_SOURCE_DIR}/ext/Walnut/src
-    ${CMAKE_CURRENT_SOURCE_DIR}/ext/Walnut/src/Walnut
-    ${CMAKE_CURRENT_SOURCE_DIR}/ext/Walnut/src/Walnut/ImGui
+    ${CMAKE_CURRENT_SOURCE_DIR}/ext/walnut/Walnut/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/ext/walnut/Walnut/src/Walnut
+    ${CMAKE_CURRENT_SOURCE_DIR}/ext/walnut/Walnut/src/Walnut/ImGui
     ${CMAKE_CURRENT_SOURCE_DIR}/ext/imgui
     ${CMAKE_CURRENT_SOURCE_DIR}/ext/imgui/backends
     ${CMAKE_CURRENT_SOURCE_DIR}/ext/glfw/include
