@@ -4,3 +4,6 @@
 [submodule "ext/imgui"]
 	path = ext/imgui
 	url = https://github.com/ocornut/imgui.git
+[submodule "ext/walnut"]
+	path = ext/walnut
+	url = https://github.com/nccvector/Walnut.git
