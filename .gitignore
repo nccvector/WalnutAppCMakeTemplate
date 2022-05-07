@@ -1,13 +1,9 @@
 # Directories
 .vs/
-bin/
-bin-int/
+build/
 
-# Files
-*.vcxproj
-*.vcxproj.user
-*.vcxproj.filters
-*.sln
-
-# Exclude
-!vendor/bin
+ext/GLFW
+ext/glm
+ext/imgui
+ext/stb_image
+ext/Walnut
