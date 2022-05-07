@@ -1,9 +1,3 @@
 # Directories
 .vs/
 build/
-
-ext/GLFW
-ext/glm
-ext/imgui
-ext/stb_image
-ext/Walnut
